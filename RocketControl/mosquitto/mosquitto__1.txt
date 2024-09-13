@@ -1,0 +1,33 @@
+1.MQTT 및 MOSQUITTO 원리 
+	https://blog.naver.com/cys_221197897841/star
+	https://khj93.tistory.com/entry/MQTT-MQTT%EC%9D%98-%EA%B0%9C%EB%85%90
+	
+	-리눅스로 진행하여 코드가 조금 다르지만 mosquitto 설명이 잘되어 있습니다.
+	https://keepbang.tistory.com/entry/Linux%EC%97%90%EC%84%9C-Mosquitto%EB%A1%9C-MQTT-%ED%86%B5%EC%8B%A0%EC%9D%84-%ED%95%B4%EB%B3%B4%EC%9E%90-Mosquitto-%EC%82%AC%EC%9A%A9
+
+2. mosquitto 설치 방법, 테스트
+
+	이거 그대로 진행해도 됩니다! : https://makeutil.tistory.210/com
+	
+3. mosquitto c++ 테스트
+	mqttproject_1.zip 압축풀고 
+	명령창열기
+	cd mqttproject
+	cmake CMakeLists.txt       ///CMakeLists.txt 적용 (https://modoocode.com/332 ) 참고
+	make			   ///실행파일 빌드
+	
+	./subscribe		   ///구독
+	
+	다른명령어창 열기
+	./pubish		   ///발행발때마다 문자 출력
+	
+	
+	참조: https://wnsgml972.github.io/mqtt/2018/02/13/mqtt_ubuntu-my_client/
+		
+4.참고	
+	4.1 라즈베리파이와 송신(모듈없어서 실행은 못해봄, 위에 3. 과 실행이 비슷	
+		https://github.com/positronic57/MQTT_examples_with_libmosquito
+	4.2 mosquitto.h summary
+		https://mosquitto.org/api/files/mosquitto-h.html
+	4.3 이해하지 못한 파일...(외부접속을 위한 mosquitto.conf파일 수정)
+		https://velog.io/@adguy/%EC%9A%B0%EB%B6%84%ED%88%ACmqtt-%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%9B%ED%8C%85-mqttBroker%EC%9D%98-%EB%AA%A8%EB%93%A0%EA%B2%83

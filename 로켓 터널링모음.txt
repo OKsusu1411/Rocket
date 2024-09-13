@@ -1,0 +1,2 @@
+rm C:\\Users\\AISL/.ssh/known_hosts
+ssh vtol@localhost -p 80
